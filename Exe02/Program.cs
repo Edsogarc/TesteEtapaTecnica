@@ -10,19 +10,27 @@
             int intervalo = int.Parse(Console.ReadLine());
             Console.WriteLine("Fim do intervalo: ");
             int fimIntervalo = int.Parse(Console.ReadLine());
+            int resultado = 0;
 
-            if((multiplicando > 5000) && (multiplicando < 0) && (intervalo > 5000) && (intervalo < 0) && (fimIntervalo > 5000) && (fimIntervalo < 0))
+            Console.WriteLine($"Multiplicando:{multiplicando}");
+            Console.WriteLine($"Início do intervalo:{intervalo}");
+            Console.WriteLine($"Fim do intervalo:{fimIntervalo}");
+
+            if((multiplicando <= 5000) && (multiplicando > 0) && (intervalo <= 5000) && (intervalo > 0) && (fimIntervalo <= 5000) && (fimIntervalo > 0))
             {
-                Console.WriteLine("Digite um número menor que 5000 e positivo: ");
-                multiplicando = int.Parse(Console.ReadLine());
-                Console.WriteLine("Digite um intervalo menor que 5000 e positivo: ");
-                intervalo = int.Parse(Console.ReadLine());
-                Console.WriteLine("Digite um fim de intervalo menor que 5000 e positivo: ");
-                fimIntervalo = int.Parse(Console.ReadLine());
-            }
-            else
-            {
-                
+                if (intervalo < fimIntervalo && fimIntervalo - intervalo < 10)
+                {
+                    for (int i = 1; intervalo <= fimIntervalo; i++)
+                    {
+                        resultado = multiplicando * intervalo;
+                        Console.WriteLine($"{multiplicando} X {intervalo} = {resultado}");
+                        intervalo++;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine($"O início do intervalo deve ser menor que seu fim");
+                }
             }
         }
 

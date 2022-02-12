@@ -8,21 +8,30 @@ namespace Exe01
     {
         static public void Main(string[] args)
         {
-            Console.WriteLine($"Digite um número com 4 dígitos: ");
-            int n = int.Parse(Console.ReadLine());
-            int[] numero = new int[n];
+
+            Console.WriteLine("Digite um número com 4 dígitos de 1000 a 9999");
+            int numero = int.Parse(Console.ReadLine());
             
+            VerificaPar(numero);
+          
+        }
+
+        public static void VerificaPar(int numero)
+        {
             int quantidade = 0;
-            for (int i = 0; i < numero[n]; i++)
+            while (numero >= 1000 & numero <= 9999)
             {
-                if ((numero[n] >= 1000) && (numero[n] <= 9999) && (numero[n] % 2 == 0))
+                foreach (char caractere in numero.ToString())
                 {
-                    quantidade = quantidade + numero[i];
-                    System.Console.WriteLine(quantidade);
-                }    
+                    if (caractere % 2 == 0)
+                    {
+                        quantidade++;
+                    }
+                }
+                Console.WriteLine($"A quantidade de números pares é {quantidade}");
+                break;
             }
-            
-            
+
         }
     }
 }
