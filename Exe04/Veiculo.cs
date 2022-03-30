@@ -1,23 +1,44 @@
+using System.Globalization;
+
 namespace Exe04
 {
-    public class Veiculo
+    class Veiculo
     {
-        public string Nome;
-        public string Marca;
-        public int CapacidadeDoTanque;
-        public int LitrosNoTanque;
+        public string Nome { get; set; }
+        public string Marca { get; set; }
+        public int CapacidadeDoTanque { get; set; }
+        public int LitrosNoTanque { get; set; }
 
-        public int Abastecer(int capacidadeDoTanque, int litrosNoTanque)
+        public Veiculo(string nome, string marca, int capacidadeDoTanque, int litrosNoTanque)
         {
+            Nome = nome;
+            Marca = marca;
             CapacidadeDoTanque = capacidadeDoTanque;
             LitrosNoTanque = litrosNoTanque;
-            if (CapacidadeDoTanque < LitrosNoTanque)
+        }
+        public Veiculo()
+        {
+
+        }
+        public void Abastecer(int litrosNoTanque)
+        {
+            int excesso = 0;
+            double valor = 0;
+            int capacidade = 0;
+            if (litrosNoTanque > CapacidadeDoTanque)
             {
-                return LitrosNoTanque;
+                excesso = litrosNoTanque - CapacidadeDoTanque;
+                capacidade = litrosNoTanque - excesso;
+                Console.WriteLine("Quantidade excedente: "+excesso+" litro(s)");
+                Console.WriteLine("Quantidade abastecida: "+capacidade+" litros");
+                valor = capacidade * 7.0;
+                Console.WriteLine("Valor a ser pago: R$"+valor.ToString("F2", CultureInfo.InvariantCulture));
             }
             else
             {
-                return CapacidadeDoTanque;
+                Console.WriteLine("Quantidade abastecida: "+litrosNoTanque+" litros");
+                valor = capacidade * 7.0;
+                Console.WriteLine("Valor a ser pago: R$"+valor.ToString("F2", CultureInfo.InvariantCulture));
             }
         }
     }

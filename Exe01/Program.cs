@@ -1,37 +1,25 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 
-namespace Exe01
+//Quantidade de pares número inteiro
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static public void Main(string[] args)
+        Console.Write("Descubra quantos dígitos pares tem no número: ");
+        int valor = int.Parse(Console.ReadLine());
+        while (valor < 1000 || valor > 9999)
         {
-
-            Console.WriteLine("Digite um número com 4 dígitos de 1000 a 9999");
-            int numero = int.Parse(Console.ReadLine());
-            
-            VerificaPar(numero);
-          
+            Console.Write("Digite um número entre 1000 e 9999 ou com 4 dígitos: ");
+            valor = int.Parse(Console.ReadLine());
         }
-
-        public static void VerificaPar(int numero)
+        int cont = 0;
+        foreach (char d in valor.ToString())
         {
-            int quantidade = 0;
-            while (numero >= 1000 & numero <= 9999)
+            if (d % 2 == 0)
             {
-                foreach (char caractere in numero.ToString())
-                {
-                    if (caractere % 2 == 0)
-                    {
-                        quantidade++;
-                    }
-                }
-                Console.WriteLine($"A quantidade de números pares é {quantidade}");
-                break;
+                cont++;
             }
-
         }
+        Console.WriteLine("Quantidade de dígitos pares é: "+cont);
     }
 }

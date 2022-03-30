@@ -1,0 +1,15 @@
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\bin\Debug\net6.0\Exe04.exe
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\bin\Debug\net6.0\Exe04.deps.json
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\bin\Debug\net6.0\Exe04.runtimeconfig.json
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\bin\Debug\net6.0\Exe04.dll
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\bin\Debug\net6.0\ref\Exe04.dll
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\bin\Debug\net6.0\Exe04.pdb
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\obj\Debug\net6.0\Exe04.csproj.AssemblyReference.cache
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\obj\Debug\net6.0\Exe04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\obj\Debug\net6.0\Exe04.AssemblyInfoInputs.cache
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\obj\Debug\net6.0\Exe04.AssemblyInfo.cs
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\obj\Debug\net6.0\Exe04.csproj.CoreCompileInputs.cache
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\obj\Debug\net6.0\Exe04.dll
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\obj\Debug\net6.0\ref\Exe04.dll
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\obj\Debug\net6.0\Exe04.pdb
+C:\Users\edson\Desktop\EtapaTecnicaGFT\Exe04\obj\Debug\net6.0\Exe04.genruntimeconfig.cache
